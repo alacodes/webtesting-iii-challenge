@@ -4,7 +4,7 @@ import { render } from '@testing-library/react'
 import '@testing-library/react/cleanup-after-each'
 import Dashboard from './Dashboard'
 
-describe('Dashboard Check', () => {
+describe('<Dashboard />', () => {
     it('should render controls with display', () => {
         const { getByText } = render(<Dashboard />)
             getByText(/unlocked/i)
